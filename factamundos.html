@@ -159,12 +159,9 @@
       <div id="div8">
 <h1 id = "what1" style="color:black;">Something needs to be done, </h1>
 <h1 id = "what2" style="color:#4fc1a7;">and <i> fast. <i> </h1>
-<br>
 
       </div>
-      <div id="div9" align = "left">
-        <a href="https://cnn.com"><img src="https://live.staticflickr.com/65535/48580610617_260c2af114_z.jpg" width="640" height="347"></a>
-      </div>
+
     </div>
 
   <!-- svg -->
@@ -286,16 +283,10 @@
       rects
         .transition()
         .delay((d, i) => 10 * i)
-        .duration(600)
+        .duration(500)
         .ease("elastic")
-        .attr("width", 70)
-        .attr("height", 10)
-        .attr("rx", 0)
-        .attr("ry", 0)
-        .attr("x", (d, i) => d['phd'] == "ios" ? randnum(30, 150) :  randnum(30, 350))
-        .attr("y", (d, i) => i * 20)
         .attr("fill", (d, i) => (i < 1 ?  "#FF0000":"#4fc1a7"))
-        .attr("opacity", (d,i)=> i < 12 ? 0 : 0 )//only show 12 people
+        .attr("opacity", (d,i)=> i < 5 ? 0 : 0 )//only show 12 people
       }
 
 
@@ -317,7 +308,7 @@
     new scroll('div4', '75%', divide, grid2);
     new scroll('div6', '75%', barChart, divide);
     new scroll('div8', '100%', blankSpace, barChart);
-    new scroll('div9', '75%', blankSpace, barChart);
+
 
 
     //start grid on page load
