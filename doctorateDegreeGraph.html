@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style> /* set the CSS */
-
+.navbar {
+  overflow: hidden;
+  background-color: #808080;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #74c4b2;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #edfffb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #c1e3dc;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  body {
+	background: #18222F;
+}
 .line {
   fill: none;
   stroke: #1B998B;
@@ -20,7 +73,19 @@
 
 </style>
 <body>
-
+<div class="navbar">
+    <a href="factamundos.html">Facts</a>
+    <a href="newarticle.html">The Future of Women in Computer Science</a>
+    <div class="dropdown">
+      <button class="dropbtn">Graphs
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bachelorsDegreeGraph.html" target="_blank">Bachelor's</a>
+        <a href="mastersDegreeGraph.html" target="_blank">Master's</a>
+        <a href="doctorateDegreeGraph.html" target="_blank">PhD</a>
+      </div>
+    </div>
 <!-- load the d3.js library -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
