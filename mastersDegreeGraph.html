@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style> /* set the CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+body{
+  padding-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
 .navbar {
   overflow: hidden;
   background-color: #808080;
@@ -214,7 +220,7 @@ d3.csv("https://raw.githubusercontent.com/cissyyugwc/cissyyugwc.github.io/master
     tooltipMale.append('rect')
         .attr('x', 12)
         .attr('y', -10)
-        .attr('width', 25)
+        .attr('width', 53)
         .attr('height', 20)
         .attr('stroke', 'black')
         .attr('fill', '#ffffff');
@@ -235,7 +241,7 @@ d3.csv("https://raw.githubusercontent.com/cissyyugwc/cissyyugwc.github.io/master
     tooltipFemale.append('rect')
         .attr('x', 12)
         .attr('y', -10)
-        .attr('width', 27)
+        .attr('width', 53)
         .attr('height', 20)
         .attr('stroke', 'black')
         .attr('fill', '#ffffff');
