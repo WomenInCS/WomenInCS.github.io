@@ -4,7 +4,25 @@
   <meta charset="utf-8">
 
   <style>
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:lightgrey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+}
 
+#myBtn:hover {
+  background-color: grey;
+}
 #what2 {
   font-size: 50px;
 }
@@ -282,6 +300,7 @@ body{
 
  </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
  <div class="postScript">
    &emsp;&emsp;Grace, Alexis, Charlotte, and Rachel participated in the Girls Who Code summer immersion program during the summer of 2019 at Pfizer headquarters in New York City.
    They produced this article as their final project to raise awareness about the gender divide in computer science.
@@ -290,6 +309,24 @@ body{
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24o3k4iG5FmJZUbSBaQGxsx%2F"+"&opts=16862&num=10&ts=1566260212202");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/
+
+ </script>
+ <script type="text/javascript">
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+     document.getElementById("myBtn").style.display = "block";
+   } else {
+     document.getElementById("myBtn").style.display = "none";
+   }
+ }
+
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
  </script>
 <!-- end www.htmlcommentbox.com -->
  </div>
