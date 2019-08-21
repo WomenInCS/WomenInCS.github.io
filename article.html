@@ -20,6 +20,65 @@
     margin:0;
     padding:0;
   }
+  .navbar {
+  overflow: hidden;
+  background-color: #808080;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #74c4b2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #edfffb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #c1e3dc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 body{
   padding-top: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -31,7 +90,7 @@ body{
      padding-right: 130px;
      padding-top: 50px;
      scroll-behavior: smooth;
-     color: #666;
+     color: #45ad96;
      font-family: 'Open Sans', sans-serif;
      font-weight: 300;
   }
@@ -103,6 +162,21 @@ body{
 </head>
 
 <body>
+
+<div class="navbar">
+  <a href="factamundos.html">Facts</a>
+  <a href="#news">The Future of Women in Computer Science</a>
+  <div class="dropdown">
+    <button class="dropbtn">Graphs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="doctorateDegreeGraph.html" target="_blank">Bachelor's</a>
+      <a href="mastersDegreeGraph.html" target="_blank">Master's</a>
+      <a href="bachelorsDegreeGraph.html" target="_blank">PhD</a>
+    </div>
+  </div>
+</div>
   <title> Women in Computer Science </title>
 
     <article id = "article1">
@@ -133,14 +207,14 @@ body{
      <br><br></p>
 
      <p>
-       &emsp;&emsp;While true that the exclusionary environment of the tech industry is a factor in the underrepresentation of women achieving computer science degrees, explicit sexism in academia remains one component that has repeatedly failed to surface and face reform. From 1973 to 2008, the University of Southern California’s introductory computer science classes used a nude image of Playboy model Lena Soderberg to teach engineers how to convert photographs to digital bits (the original JPEGs); this became
+       &emsp;&emsp;While true that the exclusionary environment of the tech industry is a factor in the underrepresentation of women achieving computer science degrees, explicit sexism in academia remains one component that has repeatedly failed to surface and face reform. From 1973 to 2008, the University of Southern California’s introductory computer science classes used an image of Playboy model Lena Soderberg to teach engineers how to convert photographs to digital bits (the original JPEGs); this became
        <a href="https://www.washingtonpost.com/outlook/2019/02/19/women-built-tech-industry-then-they-were-pushed-out/" target="_blank"> standard practice </a> for computer science departments worldwide, and Soderberg’s picture was the most widely used photo in image-processing research.
      <br><br></p>
 
      <p>
        &emsp;&emsp;The “role-model effect” could be one explanation for why women are dramatically underrepresented in computer science at all levels in academia; women account for just
        <a href=" https://www.sciencemag.org/careers/2016/04/complex-role-gender-faculty-hiring" target="_blank"> 15 percent </a>of tenure-track faculty. Other research has shown that women are
-       <a href="https://www.nytimes.com/2019/06/21/technology/gender-gap-tech-computer-science.html" target="_blank"> less likely </a>to enter computer science — and stick with it — if they don’t have female role models, mentors, and collaborators. Jinyang Wang, who is currently pursuing a PhD in computer science at Carnegie Mellon University, reflected on one summer when she did optics research under a female advisor. “I felt like I could relate more [to a woman] and felt that at that time, she was one of my role models”. Without efforts to systematically and categorically change the way we teach undergraduate computer science and increase the presence of female computer science professors, the underrepresentation of female undergraduate computer science students will endure.
+       <a href="https://www.nytimes.com/2019/06/21/technology/gender-gap-tech-computer-science.html" target="_blank"> less likely </a>to enter computer science — and stick with it — if they don’t have female role models, mentors, and collaborators. Jingyan Wang, who is currently pursuing a PhD in computer science at Carnegie Mellon University, reflected on her undergraduate research experience where she worked on computational imaging under a female advisor. “I felt like I could relate more [to a woman] and felt that at that time, she was one of my role models”. Without efforts to systematically and categorically change the way we teach undergraduate computer science and increase the presence of female computer science professors, the underrepresentation of female undergraduate computer science students will endure.
      <br><br></p>
 
      <p>
@@ -156,7 +230,7 @@ body{
 
       <p>
        &emsp;&emsp;Stanford and UC Berkeley’s efforts have increased female representation in electrical engineering and computer science, reaching 31 percent and 22 percent female representation
-       <a href="https://www.mercurynews.com/2018/04/16/forget-techs-bad-bros-stanford-berkeley-boost-female-computing-grad/" target="_blank"> in 2017 </a>respectively. Additionally, student groups such as Stanford Women in Computer Science and Berkeley’s Society of Women Engineers have created spaces for women in STEM to receive support and gain perspective from peers. Jingyan Wang, a graduate of UC Berkeley with an EECS degree, enjoyed “mingling with other female students in computer science and engineering” as part of Berkeley’s Society of Women Engineers and said that it “was not something [she] had before college.”
+       <a href="https://www.mercurynews.com/2018/04/16/forget-techs-bad-bros-stanford-berkeley-boost-female-computing-grad/" target="_blank"> in 2017 </a>respectively. Additionally, student groups such as Stanford Women in Computer Science and Berkeley’s Society of Women Engineers have created spaces for women in STEM to receive support and gain perspective from peers. Jingyan Wang, who graduated from UC Berkeley with an EECS degree before her PhD, enjoyed “mingling with other female students in computer science and engineering” as part of Berkeley’s Society of Women Engineers and said that it “was not something [she] had before college.”
        <br><br></p>
 
        <div class="thirdGraph">
@@ -166,7 +240,7 @@ body{
      </div>
 
        <p>
-        &emsp;&emsp;Since 1970, Women have been consistently underrepresented in computer science PhD programs; however, as tech becomes increasingly intertwined with society, female representation in CS is paramount. “When I entered my PhD, I was one of 2 women, out of 12 people,” said Wang. “Since [the other woman’s] adviser moved, the only other woman in the program also moved to a different school. Then it was only me in my year.”
+        &emsp;&emsp;Since 1970, women have been consistently underrepresented in computer science PhD programs; however, as tech becomes increasingly intertwined with society, female representation in CS is paramount. “When I entered my PhD, I was one of 2 women out of the 12 people in my year,” said Wang. “Since [the other woman’s] advisor moved to a different university, the only other woman in the program also moved to the university with her advisor. Then it was only me in my year.”
 
         <br><br></p>
 
@@ -176,12 +250,12 @@ body{
          <br><br></p>
 
          <p>
-          &emsp;&emsp;In fact, the U.S. Bureau of Labor Statistics projects a 15.3 percent jump in the number of jobs in CS requiring a doctorate degree by 2022. Both Jiang and Wang attested to this fact. “I think you need a PhD to even just get your foot in the door,” said Jiang. “A PhD is a much more well-rounded thing, and there are many more things you can do once you have it.” Wang spoke to a similar point, saying that “practically speaking, if you want to get a research position in industry, it’s kind of a required qualification to have a graduate degree.”
+          &emsp;&emsp;In fact, the U.S. Bureau of Labor Statistics projects a 15.3 percent jump in the number of jobs in CS requiring a doctorate degree by 2022. Both Jiang and Wang attested to this fact. “I think you need a PhD to even just get your foot in the door,” said Jiang. “A PhD is a much more well-rounded thing, and there are many more things you can do once you have it.” Wang spoke to a similar point, saying that “if you want to get a research position in industry, it’s kind of a required qualification to have a graduate degree.”
 
           <br><br></p>
 
           <p>
-           &emsp;&emsp;If the number of women who earn PhDs in computer science is <a href="https://www.computerscience.org/degrees/phd/" target="_blank">so few </a>in comparison to the number of men, how will big tech companies reach gender equality among their employees in the future? To prevent an increase of underrepresentation of women in tech from becoming reality, universities should try to populate their doctorate programs with an equal ratio of female to male students.
+           &emsp;&emsp;If the number of women who earn PhDs in computer science is <a href="https://www.computerscience.org/degrees/phd/" target="_blank">so few </a>in comparison to the number of men, how will big tech companies reach gender equality among their employees in the future? To prevent an increase of underrepresentation of women in tech from becoming reality, universities should try to populate their doctorate programs with a more balanced ratio of female to male students.
 
            <br><br></p>
 
@@ -194,12 +268,12 @@ body{
             <br><br></p>
 
             <p>
-             &emsp;&emsp;Change begins from the ground up. Change must begin in academia in order to shift representation in industry. We need to encourage undergraduate universities to support institutional and systemic change to their computer science programs, so that women feel confident in pursuing the field, ultimately increasing the presence and participation of women in CS. In terms of graduate programs, increasing female representation in faculty to provide graduates with positive role models and advocating for equal gender distribution standards in PhD cohorts is vital. We must equalize and diversify the developing and ever-changing world of tech — before it’s too late.
+             &emsp;&emsp;Change begins from the ground up. Change must begin in academia in order to shift representation in industry. We need to encourage undergraduate universities to support institutional and systemic change to their computer science programs, so that women feel confident in pursuing the field, ultimately increasing the presence and participation of women in CS. In terms of graduate programs, increasing female representation in faculty to provide graduates with positive role models is vital. We must equalize and diversify the developing and ever-changing world of tech — before it’s too late.
 
              <br><br></p>
 
              <p>
-              &emsp;&emsp;As to advice for budding female computer scientists? Wang says it best: “as long as you’re interested in something, you can do it well. Don’t compare yourself to others.”
+              &emsp;&emsp;As to advice for budding female computer scientists? Wang says it best: “as long as you’re interested in something, you can do it well. Be yourself, pursue what you’re actually interested in and don’t compare yourself to others.”
 
               <br><br></p>
 
